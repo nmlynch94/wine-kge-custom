@@ -31,8 +31,8 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: Gen Versioning Data
-          id: versioning
+        id: versioning
         uses: Soumeh/Auto-Versioning@main
         
       - name: Run a multi-line script
-         run: ./makebuild.sh lutris-KGE  https://github.com/kainatquaderee/wine-kge-custom wine-kge-${{ steps.versioning.outputs.tag }}
+        run: ./makebuild.sh lutris-KGE  https://github.com/kainatquaderee/wine-kge-custom wine-kge-${{ steps.versioning.outputs.tag }}
