@@ -1,4 +1,4 @@
-# wine-ge-custom
+# wine-kge-custom
 
 This is my build of WINE based on/forked from the most recent bleeding-edge proton experimental wine repo. This is meant to be used with non-steam games outside of Steam.
 
