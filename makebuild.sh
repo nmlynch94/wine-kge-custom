@@ -21,5 +21,7 @@ docker exec buildbot bash -c "cd /home/vagrant/buildbot/runners/wine && ./build.
 
 docker stop buildbot
 
+chown -R $(whoami) builds
+
 cd builds/runners/wine
 export SHA512NAME=$(ls | grep tar.xz | sed -r 's/tar.xz/sha512sum/g'); sha512sum $(ls | grep tar.xz) > $SHA512NAME
