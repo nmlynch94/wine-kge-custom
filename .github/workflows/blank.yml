@@ -33,3 +33,10 @@ jobs:
         
       - name: Run a multi-line script
         run: ./makebuild.sh lutris-KGE  https://github.com/kainatquaderee/wine-kge-custom wine-kge-9.1
+
+      - name: Upload Build Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: Build-Output
+          path: |
+            builds
