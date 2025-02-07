@@ -32,7 +32,7 @@ jobs:
         run:  sudo apt install podman
         
       - name: Run a multi-line script #buildbot runs as root and sets all ownership of files as root
-        run: ./makebuild.sh lutris-KGE  https://github.com/kainatquaderee/wine-kge-custom wine-kge-9.1
+        run: ./makebuild.sh lutris-KGE  https://github.com/ValveSoftware/wine proton_9.0
 
       - name: Upload Build Artifact
         uses: actions/upload-artifact@v4
